@@ -1,370 +1,327 @@
 :root {
-    --color-white: #fff;
-    --color-black: #000;
-    --text-accent: #33675b;
-    --text-primary: #6DE1E3;
-    --text-list: #85AAAB;
+  --color-white: #fff;
+  --color-black: #000;
+  --text-accent: #33675b;
+  --text-primary: #6DE1E3;
+  --text-list: #85AAAB;
 }
 
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--color-white);
-    position: relative;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-white);
+  position: relative;
 }
+
 .container {
-    padding: 0 calc(50vw - 610px);
+  padding: 0 calc(50vw - 610px);
 }
+
 .header {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 100vh;
 }
 .header__bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
-
 .header__content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 30px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
 }
 .header__left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .header__logo img {
-    height: 70px;
-    width: 200px;
-    top: 30px;
-    left: 136px;
+  height: 70px;
+  width: 200px;
+  top: 30px;
+  left: 136px;
 }
 .header__info {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .header__title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 72px;
-    margin: 140px 0 20px;
-    max-width: 453px;
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  margin: 140px 0 20px;
+  max-width: 453px;
 }
 .header__text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    width: 300px;
-    height: 72px;
-    margin: 75px 0 30px;
+  font-size: 22px;
+  width: 300px;
+  height: 72px;
+  margin: 75px 0 30px;
 }
 .header__button {
-    background-color: var(--text-accent);
-    color: var(--color-white);
-    width: 250px;
-    height: 40px;
-    top: 567px;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 400;
-    margin: 50px 0 30px;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background-color: var(--text-accent);
+  color: var(--color-white);
+  width: 250px;
+  height: 40px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 50px 0 30px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .header__button:hover {
-    background-color: var(--text-accent);
+  background-color: var(--text-accent);
 }
 .header__nav {
-    margin-top: 54px;
-    width: 400px;
-    height: 27px;
-    left: 905px;
+  margin-top: 54px;
+  width: 400px;
+  height: 27px;
+  left: 905px;
 }
 .header__list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
 }
 .header__link {
-    color: var(--text-list);
-    text-decoration: none;
-    font-size: 18px;
-    width: 400px;
-    height: 27px;
-    font-weight: 700;
-    transition: color 0.3s;
+  color: var(--text-list);
+  text-decoration: none;
+  font-size: 18px;
+  width: 400px;
+  height: 27px;
+  font-weight: 700;
+  transition: color 0.3s;
 }
 .header__link:hover {
-    color: var(--text-accent);
+  color: var(--text-accent);
 }
 .header__link--active {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 2px;
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
 }
+
 .services {
-    padding: 80px 0;
+  padding: 30px 0;
 }
-
 .services__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: 234px;
-    padding-right: 234px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 234px;
 }
-
 .services__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: none;
-    padding: 0;
-    flex: 1 1 30%;
-    transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: none;
+  padding: 20px 0;
+  flex: 1 1 30%;
+  transition: transform 0.3s;
 }
-
 .services__item:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
-
 .services__icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
 }
-
 .services__title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    color: var(--text-accent);
-    margin-bottom: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: var(--text-accent);
+  margin-bottom: 15px;
 }
-
 .services__text {
-    text-align: center;
-    font-size: 16px;
-    width: 300px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 24px;
-    color: var(--color-black);
-}
-.section--about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    gap: 40px;
-    background: url(../image/Rectangle.jpg)no-repeat center center   ;
-    background-size: cover;
-   
-    
-    
-    
+  text-align: center;
+  font-size: 16px;
+  width: 300px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  color: var(--color-black);
 }
 
+.section--about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+  background: url(../image/Rectangle.jpg) no-repeat center center;
+  background-size: cover;
+}
 .section--about__text h1 {
-    font-family:'Oswald', sans-serif; ;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    color: var(--color-white);
-    margin-bottom: 60px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--color-white);
+  margin-bottom: 60px;
 }
 .section--about__text p {
-    font-family: 'Montserrat',sans-serif ;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-white);
-    width: 570px;
-    margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-white);
+  width: 570px;
+  margin-bottom: 20px;
 }
 .section--about__image img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
-
+.section--about__first-button, .section--about__second-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 10px;
+}
 .section--about__first-button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: 2px solid var(--text-accent);
-    border-radius: 8px;
-    background-color: transparent;
-    color:var(--color-white);
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
+  border: 2px solid var(--text-accent);
+  background-color: transparent;
+  color: var(--color-white);
 }
 .section--about__second-button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-right: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: 2px solid var(--text-accent);
-    border-radius: 8px;
-    background-color: var(--text-accent);
-    color: var(--color-white);
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  border: 2px solid var(--text-accent);
+  background-color: var(--text-accent);
+  color: var(--color-white);
 }
 .section--about__button-group {
-    display: flex;
-    gap: 15px;
-    
-    
+  display: flex;
+  gap: 15px;
 }
+
 .section--appointment {
-    text-align: center;
-    padding: 60px 20px;
+  text-align: center;
+  padding: 60px 20px;
 }
 .section--appointment h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 72px;
-    color: var(--color-black);
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  color: var(--color-black);
 }
 .section--appointment__form-wrapper {
-   
-    display: flex;
-    justify-content: center;
-    align-items: stretch; 
-    gap: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  margin-bottom: 20px;
 }
-
 .section--appointment__inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .section--appointment__textarea-wrapper {
-    flex-shrink: 0;
-    
+  flex-shrink: 0;
+  display: flex;
 }
 .section--appointment__textarea {
-    width: 300px;
-    height: 150px;
-    padding: 10px 15px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    resize: none;
-    font-size: 16px;
+  width: 300px;
+  height: 150px;
+  padding: 10px 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  resize: none;
+  font-size: 16px;
 }
-
-
-.section--appointment__input,
-.section--appointment__textarea,.section--appointment__select {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    padding: 10px 15px;
-    border: 1px solid #000;
-    border-radius: 8px;
-    box-sizing: border-box; 
-   
+.section--appointment__input, .section--appointment__textarea, .section--appointment__select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 .section--appointment__select {
-    background: url('../image/Vector_Delta.png') no-repeat right 15px center;
-    background-size: 16px 16px;
-    appearance: none; 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-right: 40px; 
+  background: url("../image/Vector_Delta.png") no-repeat right 15px center;
+  background-size: 16px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 40px;
 }
-.section--appointment__textarea{
-    width: 300px;
-    padding: 10px 15px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    resize: none;
-}
-.section--appointment__textarea-wrapper {
-    display: flex;
-}
-
 .section--appointment__checkbox-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-    margin-top: 20px; 
-    padding-top: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color:var(--text-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: var(--text-accent);
 }
 .section--appointment__checkbox {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
+  display: none;
 }
-.section--appointment__checkbox {
-    display: none; 
-}
-
 .section--appointment__checkbox + label {
-    position: relative;
-    padding-left: 30px; 
-    cursor: pointer;
-    font-size: 14px;
-    user-select: none;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
 }
-
 .section--appointment__checkbox + label::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--text-accent);
-    border-radius: 4px;
-    background-color: transparent;
-    transition: background-color 0.3s, border-color 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-accent);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s;
 }
-
 .section--appointment__checkbox:checked + label::before {
-    background-color: var(--text-accent); 
-    border-color: var(--text-accent); 
+  background-color: var(--text-accent);
+  border-color: var(--text-accent);
 }
 .section--appointment__button-group__button {
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
-    margin-right: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: 2px solid var(--text-accent);
-    border-radius: 8px;
-    background-color: var(--text-accent);
-    color:var(--color-white);
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid var(--text-accent);
+  border-radius: 8px;
+  background-color: var(--text-accent);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/*# sourceMappingURL=style.css.map */
