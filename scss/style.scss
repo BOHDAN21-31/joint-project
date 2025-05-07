@@ -496,7 +496,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
     font-weight: 700;
-    color:#fff;
+    color: var(--color-white);
     margin-bottom: 50px;
     margin-left: 50px;
     text-align: left;
@@ -521,7 +521,7 @@ body {
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
-      color: #fff;
+      color: var(--color-white);
       text-align: left;
       margin-top: 10px;
       margin-left: 30px;
@@ -662,7 +662,7 @@ body {
 .discount-form {
   background: var(--color-white);
   text-align: center;
-  padding: 0px 100px 70px;
+  padding: 0 100px 70px;
 }
 form {
   display: flex;
